@@ -9,6 +9,11 @@ if (process.argv.length <= 2) {
 
 var serverPort = process.argv[4] || 8080;
 
+if (!fs.existsSync(__dirname + '/cache')) {
+  fs.mkdirSync(__dirname + '/cache');
+  fs.mkdirSync(__dirname + '/cache_headers');
+}
+
 var files = fs.readdirSync(__dirname + '/cache');
 files.forEach(function(file, index){
   fs.unlinkSync(__dirname + '/cache/' + file);
