@@ -1,6 +1,7 @@
 var http = require('http'), 
   sys = require('sys'),
-  fs = require('fs');  
+  fs = require('fs'),
+  crypto = require('crypto');
 
 if (process.argv.length <= 2) {
   console.log('node proxy.js HOST [PORT=80] [LOCALPORT=8080]');
@@ -35,8 +36,9 @@ http.createServer(function(request, response) {
     method: request.method
   };
 
-  var cacheFileName = __dirname + '/cache/' + encodeURIComponent(request.url);
-  var cacheHeaderFileName = __dirname + '/cache_headers/' + encodeURIComponent(request.url);
+  var md5Name = crypto.createHash('md5').update(request.url).digest('hex');
+  var cacheFileName = __dirname + '/cache/' + md5Name;
+  var cacheHeaderFileName = __dirname + '/cache_headers/' + md5Name;
 
   if (fs.existsSync(cacheFileName)) {
     sys.log(
