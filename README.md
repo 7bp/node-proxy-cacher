@@ -1,7 +1,7 @@
 node-proxy-cacher
 =================
 
-A simple node.js proxy service that caches response on filesystem. Good for developing purpose that requires live data.
+This simple proxy implementation can be used to prevent api-hammering in development stage, reduce loading time after second refresh and serve always the same result and server headers.
 
 Sidenote: Does not support HTTPS.
 
@@ -35,7 +35,9 @@ node proxy.js www.apple.com 80
 4 May 04:53:59 - FETCH 127.0.0.1: GET /home/images/billboard_ipad_hero.jpg > www.apple.com:80/home/images/billboard_ipad_hero.jpg
 4 May 04:53:59 - FETCH 127.0.0.1: GET /global/elements/arrows/morearrow_08c.svg > www.apple.com:80/global/elements/arrows/morearrow_08c.svg
 4 May 04:53:59 - FETCH 127.0.0.1: GET /v/home/t/images/video_play_medium.svg > www.apple.com:80/v/home/t/images/video_play_medium.svg
-<<FORCED RELOAD>>
+```
+Now force-refreshing the browser:
+```
 4 May 04:54:50 - CACHE 127.0.0.1: GET / > www.apple.com:80/
 4 May 04:54:51 - CACHE 127.0.0.1: GET /global/styles/base.css > www.apple.com:80/global/styles/base.css
 4 May 04:54:51 - CACHE 127.0.0.1: GET /v/home/t/styles/billboard.css > www.apple.com:80/v/home/t/styles/billboard.css
