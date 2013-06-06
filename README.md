@@ -14,49 +14,69 @@ This will start the proxy server on localport, default 8080 piping all queries f
 Example
 ```
 node proxy.js www.apple.com 80
-4 May 04:53:52 - Deleted 0 cache files
-4 May 04:53:52 - Listening on port 8080...
-4 May 04:53:59 - FETCH 127.0.0.1: GET / > www.apple.com:80/
-4 May 04:53:59 - FETCH 127.0.0.1: GET /v/home/t/styles/home.css > www.apple.com:80/v/home/t/styles/home.css
-4 May 04:53:59 - FETCH 127.0.0.1: GET /v/home/t/styles/billboard.css > www.apple.com:80/v/home/t/styles/billboard.css
-4 May 04:53:59 - FETCH 127.0.0.1: GET /itunes/shared/counter/styles/counter.css > www.apple.com:80/itunes/shared/counter/styles/counter.css
-4 May 04:53:59 - FETCH 127.0.0.1: GET /v/itunes/shared/counter/a/styles/counter.css > www.apple.com:80/v/itunes/shared/counter/a/styles/counter.css
-4 May 04:53:59 - FETCH 127.0.0.1: GET /global/styles/base.css > www.apple.com:80/global/styles/base.css
-4 May 04:53:59 - FETCH 127.0.0.1: GET /home/styles/home.css > www.apple.com:80/home/styles/home.css
-4 May 04:53:59 - FETCH 127.0.0.1: GET /v/home/t/scripts/home-promo-counter.js > www.apple.com:80/v/home/t/scripts/home-promo-counter.js
-4 May 04:53:59 - FETCH 127.0.0.1: GET /v/home/t/scripts/home.js > www.apple.com:80/v/home/t/scripts/home.js
-4 May 04:53:59 - FETCH 127.0.0.1: GET /v/itunes/shared/counter/a/scripts/counter.js > www.apple.com:80/v/itunes/shared/counter/a/scripts/counter.js
-4 May 04:53:59 - FETCH 127.0.0.1: GET /global/scripts/promomanager.js > www.apple.com:80/global/scripts/promomanager.js
-4 May 04:53:59 - FETCH 127.0.0.1: GET /home/images/billboard_iphone_title.png > www.apple.com:80/home/images/billboard_iphone_title.png
-4 May 04:53:59 - FETCH 127.0.0.1: GET /home/images/billboard_ipad_title.png > www.apple.com:80/home/images/billboard_ipad_title.png
-4 May 04:53:59 - FETCH 127.0.0.1: GET /global/elements/flags/22x22/usa.png > www.apple.com:80/global/elements/flags/22x22/usa.png
-4 May 04:53:59 - FETCH 127.0.0.1: GET /home/images/billboard_iphone_hero.jpg > www.apple.com:80/home/images/billboard_iphone_hero.jpg
-4 May 04:53:59 - FETCH 127.0.0.1: GET /itunes/store/counters/il6ark7ec.js > www.apple.com:80/itunes/store/counters/il6ark7ec.js
-4 May 04:53:59 - FETCH 127.0.0.1: GET /home/images/billboard_ipad_hero.jpg > www.apple.com:80/home/images/billboard_ipad_hero.jpg
-4 May 04:53:59 - FETCH 127.0.0.1: GET /global/elements/arrows/morearrow_08c.svg > www.apple.com:80/global/elements/arrows/morearrow_08c.svg
-4 May 04:53:59 - FETCH 127.0.0.1: GET /v/home/t/images/video_play_medium.svg > www.apple.com:80/v/home/t/images/video_play_medium.svg
+11 May 02:07:18 - Deleted 13 cache files
+11 May 02:07:18 - Listening on port 8080...
+11 May 02:07:33 - FETCH / - /
+11 May 02:07:33 - FETCH /v/itunes/shared/counter/a/styles/counter.css - /v/itunes/shared/counter/a/styles/counter.css
+11 May 02:07:33 - FETCH /v/home/t/styles/home.css - /v/home/t/styles/home.css
+11 May 02:07:33 - FETCH /v/home/t/styles/billboard.css - /v/home/t/styles/billboard.css
+11 May 02:07:33 - FETCH /itunes/shared/counter/styles/counter.css - /itunes/shared/counter/styles/counter.css
+11 May 02:07:33 - FETCH /home/styles/home.css - /home/styles/home.css
+11 May 02:07:33 - FETCH /global/styles/base.css - /global/styles/base.css
+11 May 02:07:33 - FETCH /v/home/t/scripts/home-hero-counter.js - /v/home/t/scripts/home-hero-counter.js
+11 May 02:07:33 - FETCH /v/home/t/scripts/home.js - /v/home/t/scripts/home.js
+11 May 02:07:33 - FETCH /global/scripts/promomanager.js - /global/scripts/promomanager.js
+11 May 02:07:33 - FETCH /v/itunes/shared/counter/a/scripts/counter.js - /v/itunes/shared/counter/a/scripts/counter.js
+11 May 02:07:33 - FETCH /itunes/50-billion-app-countdown/images/50billion_home_title.png - /itunes/50-billion-app-countdown/images/50billion_home_title.png
+11 May 02:07:33 - FETCH /itunes/50-billion-app-countdown/images/50billion_home_sub_counting.png - /itunes/50-billion-app-countdown/images/50billion_home_sub_counting.png
+11 May 02:07:33 - FETCH /itunes/50-billion-app-countdown/images/50billion_home_sub_earth.png - /itunes/50-billion-app-countdown/images/50billion_home_sub_earth.png
+11 May 02:07:33 - FETCH /itunes/50-billion-app-countdown/images/50billion_home_sub_china.png - /itunes/50-billion-app-countdown/images/50billion_home_sub_china.png
+11 May 02:07:34 - FETCH /global/elements/flags/22x22/usa.png - /global/elements/flags/22x22/usa.png
+11 May 02:07:34 - FETCH /v/home/t/images/video_play_medium.svg - /v/home/t/images/video_play_medium.svg
+11 May 02:07:34 - FETCH /itunes/store/counters/il6ark7ec.js - /itunes/store/counters/il6ark7ec.js
+11 May 02:07:34 - FETCH /itunes/50-billion-app-countdown/images/50billion_home_hero_earth.jpg - /itunes/50-billion-app-countdown/images/50billion_home_hero_earth.jpg
+11 May 02:07:34 - FETCH /itunes/50-billion-app-countdown/images/50billion_home_hero_china.jpg - /itunes/50-billion-app-countdown/images/50billion_home_hero_china.jpg
+11 May 02:07:34 - FETCH /global/elements/arrows/morearrow_08c.svg - /global/elements/arrows/morearrow_08c.svg
+11 May 02:07:34 - FETCH /itunes/50-billion-app-countdown/images/50billion_home_hero_counting.jpg - /itunes/50-billion-app-countdown/images/50billion_home_hero_counting.jpg
+11 May 02:07:34 - FETCH /favicon.ico - /favicon.ico
 ```
 Now force-refreshing the browser:
 ```
-4 May 04:54:50 - CACHE 127.0.0.1: GET / > www.apple.com:80/
-4 May 04:54:51 - CACHE 127.0.0.1: GET /global/styles/base.css > www.apple.com:80/global/styles/base.css
-4 May 04:54:51 - CACHE 127.0.0.1: GET /v/home/t/styles/billboard.css > www.apple.com:80/v/home/t/styles/billboard.css
-4 May 04:54:51 - CACHE 127.0.0.1: GET /v/home/t/styles/home.css > www.apple.com:80/v/home/t/styles/home.css
-4 May 04:54:51 - CACHE 127.0.0.1: GET /home/styles/home.css > www.apple.com:80/home/styles/home.css
-4 May 04:54:51 - CACHE 127.0.0.1: GET /itunes/shared/counter/styles/counter.css > www.apple.com:80/itunes/shared/counter/styles/counter.css
-4 May 04:54:51 - CACHE 127.0.0.1: GET /v/itunes/shared/counter/a/styles/counter.css > www.apple.com:80/v/itunes/shared/counter/a/styles/counter.css
-4 May 04:54:51 - CACHE 127.0.0.1: GET /global/scripts/promomanager.js > www.apple.com:80/global/scripts/promomanager.js
-4 May 04:54:51 - CACHE 127.0.0.1: GET /v/home/t/scripts/home.js > www.apple.com:80/v/home/t/scripts/home.js
-4 May 04:54:51 - CACHE 127.0.0.1: GET /v/itunes/shared/counter/a/scripts/counter.js > www.apple.com:80/v/itunes/shared/counter/a/scripts/counter.js
-4 May 04:54:51 - CACHE 127.0.0.1: GET /v/home/t/scripts/home-promo-counter.js > www.apple.com:80/v/home/t/scripts/home-promo-counter.js
-4 May 04:54:51 - CACHE 127.0.0.1: GET /home/images/billboard_iphone_title.png > www.apple.com:80/home/images/billboard_iphone_title.png
-4 May 04:54:51 - CACHE 127.0.0.1: GET /home/images/billboard_iphone_hero.jpg > www.apple.com:80/home/images/billboard_iphone_hero.jpg
-4 May 04:54:51 - CACHE 127.0.0.1: GET /global/elements/flags/22x22/usa.png > www.apple.com:80/global/elements/flags/22x22/usa.png
-4 May 04:54:51 - CACHE 127.0.0.1: GET /home/images/billboard_ipad_hero.jpg > www.apple.com:80/home/images/billboard_ipad_hero.jpg
-4 May 04:54:51 - CACHE 127.0.0.1: GET /home/images/billboard_ipad_title.png > www.apple.com:80/home/images/billboard_ipad_title.png
-4 May 04:54:51 - CACHE 127.0.0.1: GET /v/home/t/images/video_play_medium.svg > www.apple.com:80/v/home/t/images/video_play_medium.svg
-4 May 04:54:51 - CACHE 127.0.0.1: GET /itunes/store/counters/il6ark7ec.js > www.apple.com:80/itunes/store/counters/il6ark7ec.js
-4 May 04:54:51 - CACHE 127.0.0.1: GET /global/elements/arrows/morearrow_08c.svg > www.apple.com:80/global/elements/arrows/morearrow_08c.svg
+11 May 02:07:45 - CACHE /
+11 May 02:07:46 - CACHE /global/styles/base.css
+11 May 02:07:46 - CACHE /v/home/t/styles/home.css
+11 May 02:07:46 - CACHE /v/home/t/styles/billboard.css
+11 May 02:07:46 - CACHE /v/itunes/shared/counter/a/styles/counter.css
+11 May 02:07:46 - CACHE /itunes/shared/counter/styles/counter.css
+11 May 02:07:46 - CACHE /home/styles/home.css
+11 May 02:07:46 - CACHE /global/scripts/promomanager.js
+11 May 02:07:46 - CACHE /v/home/t/scripts/home-hero-counter.js
+11 May 02:07:46 - CACHE /v/itunes/shared/counter/a/scripts/counter.js
+11 May 02:07:46 - CACHE /v/home/t/scripts/home.js
+11 May 02:07:46 - CACHE /itunes/50-billion-app-countdown/images/50billion_home_title.png
+11 May 02:07:46 - CACHE /itunes/50-billion-app-countdown/images/50billion_home_hero_earth.jpg
+11 May 02:07:46 - CACHE /itunes/50-billion-app-countdown/images/50billion_home_sub_earth.png
+11 May 02:07:46 - CACHE /itunes/50-billion-app-countdown/images/50billion_home_sub_counting.png
+11 May 02:07:46 - CACHE /itunes/50-billion-app-countdown/images/50billion_home_hero_china.jpg
+11 May 02:07:46 - CACHE /itunes/50-billion-app-countdown/images/50billion_home_sub_china.png
+11 May 02:07:46 - CACHE /itunes/50-billion-app-countdown/images/50billion_home_hero_counting.jpg
+11 May 02:07:46 - CACHE /global/elements/flags/22x22/usa.png
+11 May 02:07:46 - CACHE /itunes/store/counters/il6ark7ec.js
+11 May 02:07:46 - CACHE /v/home/t/images/video_play_medium.svg
+11 May 02:07:46 - CACHE /global/elements/arrows/morearrow_08c.svg
 ```
-
 Any request to localhost:8080/* will be piped through to www.apple.com and immediately cached in the cache folder. Any further request with the same url will result in a simple cache output.
+
+
+Another example showing the use of FILTER
+```
+node proxy.js apidomain.example.com 80 8181 cmd
+11 May 02:09:18 - Deleted 0 cache files
+11 May 02:09:18 - Listening on port 8080...
+11 May 02:09:33 - FETCH /api.php?cmd=test - /api.php?cmd=test&session=abc&random=913123881
+```
+Now re-firing the query:
+```
+11 May 02:09:45 - CACHE /api.php?cmd=test
+```
+Any request with the same parameter values for the keys given as filter parameter will result in the same cache output.
